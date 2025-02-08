@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pembayaran - MBOTEE Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container flex justify-between items-center">
+            <h1 class="text-2xl font-bold">STY_Store</h1>
+            <nav class="flex space-x-6">
+                <a href="menu utama.html"><i class="fas fa-home"></i> Home</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-10">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Pembayaran</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Alamat Pengiriman</h3>
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Nama Lengkap</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Alamat Lengkap</label>
+                        <textarea class="w-full px-4 py-2 border border-gray-300 rounded-md" rows="4" required></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Kota</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Kode Pos</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-md" required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4">Metode Pembayaran</h3>
+                <form>
+                    <div class="mb-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="payment-method" value="Transfer Bank" class="mr-2">
+                            <span class="text-gray-700">Transfer Bank</span>
+                        </label>
+                        <select class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md">
+                            <option value="bca">BCA</option>
+                            <option value="mandiri">Mandiri</option>
+                            <option value="bni">BNI</option>
+                            <option value="bri">BRI</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="payment-method" value="Kartu Kredit" class="mr-2">
+                            <span class="text-gray-700">Kartu Kredit</span>
+                        </label>
+                        <select class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md">
+                            <option value="bca">BCA</option>
+                            <option value="mandiri">Mandiri</option>
+                            <option value="bni">BNI</option>
+                            <option value="bri">BRI</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="flex items-center">
+                            <input type="radio" name="payment-method" value="Cash On Delivery" class="mr-2">
+                            <span class="text-gray-700">Cash On Delivery (COD)</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <button class="bg-blue-500 text-white py-2 px-6 rounded-md text-xl">Konfirmasi Pembayaran</button>
+        </div>
+    </main>
+
+    <footer class="bg-blue-500 text-white py-6 mt-10">
+        <div class="container text-center">
+            <p>&copy; 2025 MBOTEE. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
